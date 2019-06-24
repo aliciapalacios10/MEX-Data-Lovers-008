@@ -6,3 +6,5 @@ const example = () => {
 };
 
 window.example = example;
+
+// comentario
