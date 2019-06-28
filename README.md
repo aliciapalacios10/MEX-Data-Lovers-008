@@ -41,8 +41,8 @@ Quiero encontrar a los pokemones de acuerdo a su numero y nombre
 
 ## Sketch
 Plasmamos nuestra idea de como nos gustaria que se visualizara la applicacion, comenzamos haciendo un Sketch de prueba en papel y lapiz.
-<img src=img-readme/sketch1>
-<img src=img-readme/sketch2>
+<img src=img-readme/sketch1.jpeg>
+<img src=img-readme/sketch2.jpeg>
 
 ## Prototipo de baja fidelidad
 Creamos un prototipo de baja fidelidad con la aplicacion de Marvel, en este protoripo testeamos los botones, ya que en el sketch no era muy entendible.
