@@ -31,12 +31,15 @@ que necesitan, en base a eso pudimos definir los datos a filtrar.
 
 ## Historias de Usuario
 1. Enunciado: Yo como usuario de la aplicación 
+
 Quiero filtrar los pokemones de acuerdo a su tipo (planta, veneno, fuero etc)
 
 2. Enunciado: Yo como usuario de la aplicación
+
 Quiero filtrar los pokemones de acuerdo a la probabilidad que tienen para ser encontrados
 
 3. Enunciado: Yo como usuario de la aplicación
+
 Quiero encontrar a los pokemones de acuerdo a su numero y nombre
 
 ## Sketch
