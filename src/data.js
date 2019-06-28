@@ -6,10 +6,6 @@ const example = () => {
 };
 
 window.example = example;
-<<<<<<< HEAD
-
-// comentario
-=======
 // console.log(POKEMON.pokemon[0].name);
 
 let pokeNames = '';
@@ -29,4 +25,3 @@ let idPokemon = 0;
 
 
 
->>>>>>> origin/master
