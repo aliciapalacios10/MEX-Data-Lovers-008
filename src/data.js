@@ -6,5 +6,27 @@ const example = () => {
 };
 
 window.example = example;
+<<<<<<< HEAD
 
 // comentario
+=======
+// console.log(POKEMON.pokemon[0].name);
+
+let pokeNames = '';
+let idPokemon = 0;
+
+
+
+ for(let i =0; i<POKEMON.pokemon.length;i++){
+
+  // let idPokemon= POKEMON.pokemon[i].id;
+
+  pokeNames = POKEMON.pokemon[i].name;
+
+  console.log(pokeNames);
+  // console.log(pokeNames);
+}
+
+
+
+>>>>>>> origin/master
