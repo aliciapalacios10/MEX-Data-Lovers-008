@@ -22,13 +22,31 @@ mejor percepción de nuestros Usuarios y conocer los sitios que ellos frecuentab
 Las siguientes preguntas que realizamos fueron para conocer que información 
 les era relevante saber como por ejemplo: nombre, tipo, peso, altura, debilidades etc. 
 basándonos en los datos con los que contábamos.
-<img src=img-readme/tabla-Clasificacion.png>
-
 
 Nos dimos cuenta que nuestros usuarios eran jugadores intermedios y avanzados, 
 por lo cual sabían en especifico que información es la que les interesa y la 
 que necesitan, en base a eso pudimos definir los datos a filtrar. 
 <img src=img-readme/tabla-Nivel-Jugador.png>
+<img src=img-readme/tabla-Clasificacion.png>
+
+## Historias de Usuario
+1. Enunciado: Yo como usuario de la aplicación 
+Quiero filtrar los pokemones de acuerdo a su tipo (planta, veneno, fuero etc)
+
+2. Enunciado: Yo como usuario de la aplicación
+Quiero filtrar los pokemones de acuerdo a la probabilidad que tienen para ser encontrados
+
+3. Enunciado: Yo como usuario de la aplicación
+Quiero encontrar a los pokemones de acuerdo a su numero y nombre
+
+## Sketch
+Plasmamos nuestra idea de como nos gustaria que se visualizara la applicacion, comenzamos haciendo un Sketch de prueba
+<img src=img-readme/sketch1>
+<img src=img-readme/sketch2>
+
+## Prototipo de baja fidelidad
+Creamos un prototipo de baja fidelidad con la aplicacion de Marvel, en este protoripo testeamos los botones, ya que en el sketch no era muy entendible.
+<>
 
 ## Índice
 
