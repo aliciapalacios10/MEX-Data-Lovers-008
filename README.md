@@ -1,5 +1,56 @@
 # Data Lovers
 
+## Definición del usuario.
+
+Comenzamos haciendo un análisis de la data que nos habían proporcionado, 
+investigamos los conceptos para saber cuales eran los elementos con los 
+que contábamos, nos apoyamos de algunas compañeras que son o eran jugadoras 
+de Pokémon Go, las cuales nos ayudaron a entender mejor la data que teníamos.
+<img src=img-readme/tabla1.png>
+
+## Encuestas a Usuarios
+
+Como siguiente paso decidimos lanzar una encuesta para conocer cuales serian 
+nuestros usuarios, colocamos preguntas que nos dieran información sobre cuanto 
+tiempo le invertían jugando, Desde hace cuanto juegan, que nivel de jugador se 
+consideraban (principiante, intermedio, avanzado), si se apoyaban de alguna 
+pagina web para encontrar información, estas preguntas nos ayudaron a tener una 
+mejor percepción de nuestros Usuarios y conocer los sitios que ellos frecuentaban.
+<img src=img-readme/tabla-cuanto-juegas.png>
+<img src=img-readme/tabla.paginas.png>
+
+Las siguientes preguntas que realizamos fueron para conocer que información 
+les era relevante saber como por ejemplo: nombre, tipo, peso, altura, debilidades etc. 
+basándonos en los datos con los que contábamos.
+
+Nos dimos cuenta que nuestros usuarios eran jugadores intermedios y avanzados, 
+por lo cual sabían en especifico que información es la que les interesa y la 
+que necesitan, en base a eso pudimos definir los datos a filtrar. 
+<img src=img-readme/tabla-Nivel-Jugador.png>
+<img src=img-readme/tabla-Clasificacion.png>
+
+## Historias de Usuario
+1. Enunciado: Yo como usuario de la aplicación 
+
+Quiero filtrar los pokemones de acuerdo a su tipo (planta, veneno, fuero etc)
+
+2. Enunciado: Yo como usuario de la aplicación
+
+Quiero filtrar los pokemones de acuerdo a la probabilidad que tienen para ser encontrados
+
+3. Enunciado: Yo como usuario de la aplicación
+
+Quiero encontrar a los pokemones de acuerdo a su numero y nombre
+
+## Sketch
+Plasmamos nuestra idea de como nos gustaria que se visualizara la applicacion, comenzamos haciendo un Sketch de prueba en papel y lapiz.
+<img src=img-readme/sketch1.jpeg>
+<img src=img-readme/sketch2.jpeg>
+
+## Prototipo de baja fidelidad
+Creamos un prototipo de baja fidelidad con la aplicacion de Marvel, en este protoripo testeamos los botones, ya que en el sketch no era muy entendible.
+https://marvelapp.com/417egjf/screen/58722283
+
 ## Índice
 
 - [Preámbulo](#preámbulo)
