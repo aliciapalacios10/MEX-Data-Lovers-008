@@ -40,7 +40,7 @@ Quiero filtrar los pokemones de acuerdo a la probabilidad que tienen para ser en
 Quiero encontrar a los pokemones de acuerdo a su numero y nombre
 
 ## Sketch
-Plasmamos nuestra idea de como nos gustaria que se visualizara la applicacion, comenzamos haciendo un Sketch de prueba
+Plasmamos nuestra idea de como nos gustaria que se visualizara la applicacion, comenzamos haciendo un Sketch de prueba en papel y lapiz.
 <img src=img-readme/sketch1>
 <img src=img-readme/sketch2>
 
