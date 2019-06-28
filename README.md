@@ -6,6 +6,7 @@ Comenzamos haciendo un análisis de la data que nos habían proporcionado,
 investigamos los conceptos para saber cuales eran los elementos con los 
 que contábamos, nos apoyamos de algunas compañeras que son o eran jugadoras 
 de Pokémon Go, las cuales nos ayudaron a entender mejor la data que teníamos.
+<img src=img-readme/tabla1.png>
 
 ##Encuestas
 
