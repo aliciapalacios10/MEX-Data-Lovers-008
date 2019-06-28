@@ -1,0 +1,40 @@
+figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+  }
+  .header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    width: 100%;
+  }
+  
+  .header ol li:hover {
+    color: gray;
+    background-color: #323436;
+  
+  }
+  .menu{
+    background-color: #1b2127;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    align-items: center;
+  }
+  article{
+    background-color:blue;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+
+  }

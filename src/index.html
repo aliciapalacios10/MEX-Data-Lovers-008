@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <header class="header">
+    <img src="./imagenes/Pokémon_logo.svg.png" width="25%" alt="Logo Pokémon">
+  </header>
+
+  <nav class="menu">
+    <section>
+      <select name="tipo" id="tipo">
+        <option value="">Tipo</option>
+        <option value="">Acero</option>
+        <option value="">Agua</option>
+        <option value="">Bicho</option>
+        <option value="">Dragón</option>
+        <option value="">Eléctrico</option>
+        <option value="">Fantasma</option>
+        <option value="">Fuego</option>
+        <option value="">Hada</option>
+        <option value="">Hielo</option>
+        <option value="">Lucha</option>
+        <option value="">Normal</option>
+        <option value="">Planta</option>
+        <option value="">Psíquico</option>
+        <option value="">Siniestro</option>
+        <option value="">Roca</option>
+        <option value="">Tierra</option>
+        <option value="">Veneno</option>
+        <option value="">Volador</option>
+      </select>
+
+      <select name="probabilidad" id="probabilidad">
+        <option value="">Probabilidad</option>
+        <option value="">Mayor a menor</option>
+        <option value="">Menor a mayor</option>
+      </select>
+
+      <select name="debilidades" id="debilidades">
+        <option value="">Debilidades</option>
+      </select>
+    </section>
+  </nav>
+
+  <section>
+    <article>
+      <h2>Los 3 Pokémodex Favoritos</h2>
+    </article>
+
+    <article>
+        <h2>Mayor probabilidad de encontrar</h2>
+    </article>
+  </section>
+
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <script src="./data/pokemon/pokemon.js"></script>
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
