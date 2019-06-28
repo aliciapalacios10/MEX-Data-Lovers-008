@@ -49,7 +49,7 @@ Plasmamos nuestra idea de como nos gustaria que se visualizara la applicacion, c
 
 ## Prototipo de baja fidelidad
 Creamos un prototipo de baja fidelidad con la aplicacion de Marvel, en este protoripo testeamos los botones, ya que en el sketch no era muy entendible.
-<>
+https://marvelapp.com/417egjf/screen/58722283
 
 ## Índice
 
