@@ -8,7 +8,7 @@ que contábamos, nos apoyamos de algunas compañeras que son o eran jugadoras
 de Pokémon Go, las cuales nos ayudaron a entender mejor la data que teníamos.
 <img src=img-readme/tabla1.png>
 
-##Encuestas
+## Encuestas a Usuarios
 
 Como siguiente paso decidimos lanzar una encuesta para conocer cuales serian 
 nuestros usuarios, colocamos preguntas que nos dieran información sobre cuanto 
@@ -16,15 +16,19 @@ tiempo le invertían jugando, Desde hace cuanto juegan, que nivel de jugador se
 consideraban (principiante, intermedio, avanzado), si se apoyaban de alguna 
 pagina web para encontrar información, estas preguntas nos ayudaron a tener una 
 mejor percepción de nuestros Usuarios y conocer los sitios que ellos frecuentaban.
-
+<img src=img-readme/tabla-cuanto-juegas.png>
+<img src=img-readme/tabla.paginas.png>
 
 Las siguientes preguntas que realizamos fueron para conocer que información 
 les era relevante saber como por ejemplo: nombre, tipo, peso, altura, debilidades etc. 
 basándonos en los datos con los que contábamos.
+<img src=img-readme/tabla-Clasificacion.png>
+
 
 Nos dimos cuenta que nuestros usuarios eran jugadores intermedios y avanzados, 
 por lo cual sabían en especifico que información es la que les interesa y la 
 que necesitan, en base a eso pudimos definir los datos a filtrar. 
+<img src=img-readme/tabla-Nivel-Jugador.png>
 
 ## Índice
 
