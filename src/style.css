@@ -17,12 +17,17 @@
   width: 153px;
   height: 180px;
 }
+.content-style{
+  width: 90%;
+  height: 60vh;
+  background-color: blue;
+  display: flex;
+}
 .card{
-  width: 70%;
+  width: 40%;
   height: 40vh;
   background-color: aquamarine;
   border: 1px solid red;
-  display: flex;
-
+  display: inline-block;
 }
     

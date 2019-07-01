@@ -12,7 +12,7 @@ let str = ''
          <p>${element.type[0]}</p>
 
          </div>`
-
+//hola
 
     });
     card.innerHTML = str
@@ -36,3 +36,4 @@ let str = ''
 printData()
 
 
+?
