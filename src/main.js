@@ -9,10 +9,10 @@ let str = ''
         console.log(element)
          str += `<div class="card"><p>${element.name}</p>
          <img src="${element.img}"></img>
+         <p>${element.num}</p>
          <p>${element.type[0]}</p>
 
          </div>`
-//hola
 
     });
     card.innerHTML = str
@@ -35,5 +35,3 @@ let str = ''
 
 printData()
 
-
-?
