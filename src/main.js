@@ -32,22 +32,45 @@ let str = ''
 
     let typePrueba = "Rock";
     let typePoke= '';
-    const typePokemon = data.filter(function(element){
-        for(let i=0;i<element.type.length;i++){
-            if(typePrueba== 'Grass'){
-               return(element.type[0]=='Grass');
-                 }
+    // const typePokemon = data.filter(function(element){
+    //     for(let i=0;i<element.type.length;i++){
+    //         if(typePrueba== 'Grass'){
+    //            return(element.type[0]=='Grass');
+    //              }
 
-            else if(typePrueba=="Rock"){
-                return(element.type[0]=="Rock");
+    //         else if(typePrueba=="Rock"){
+    //             return(element.type[0]=="Rock");
 
-            }
-            }
-         }
-    );
+    //         }
+    //         }
+    //      }
+    // );
+
+    const typePokemon = data.filter(element => element.type[0] == "Rock")
+    console.log(typePokemon)
     
 
     console.log(typePokemon);
+
+//PRUEBA JALAR VALOR DEL SELECT CON CHANGE
+
+// const selectType= document.querySelector('.filter-type');
+
+// selectType.addEventListener("change",(event)=>{
+//     let resultType= document.querySelector('.resultado');
+
+//     resultType.textContent= `El tipo es: ${event.target.value}`;
+    
+// })
+
+
+const selectType = ()=>{
+
+alert(document.getElementById('filter-type').value);
+
+
+}
+
 
 
 
