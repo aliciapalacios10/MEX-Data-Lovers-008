@@ -10,7 +10,7 @@ window.example = example;
 
 //let pokeNames = '';
 //let idPokemon = 0;
-
+//hola
 
 
 //  for(let i =0; i<POKEMON.pokemon.length;i++){
