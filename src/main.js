@@ -1,17 +1,19 @@
 const data = window.POKEMON.pokemon; //Traer la data
 //console.log(window.POKEMON.pokemon[1]);
-const card = document.getElementById('pokemon-card')
+const card = document.getElementById('content-card')
 
 
 const printData = ()=>{ //Imprimir la data
 let str = ''
     data.forEach(element => {
         console.log(element)
-         str += `<div class="card"><p>${element.name}</p>
-         <img src="${element.img}"></img>
+         str += `<div class="card">
+         <div class="card-image"><img src="${element.img}"></img></div>
+         <div class="card-text">
+         <p>${element.name}</p>
          <p>${element.num}</p>
          <p>${element.type[0]}</p>
-
+         </div>
          </div>`
 
     });
