@@ -23,27 +23,27 @@ window.example = example;
 //   // console.log(pokeNames);
 // }
 
-const data = window.POKEMON.pokemon; //Traer la data
-//console.log(window.POKEMON.pokemon[1]);
+// const data = window.POKEMON.pokemon; //Traer la data
+// //console.log(window.POKEMON.pokemon[1]);
 
-let i = '';
-//let idPokemon = 0;//
+// let i = '';
+// //let idPokemon = 0;//
 
-console.log(element.image);
-const print = (data)=>{ //Imprimir la data
-    for(let i =0; i<POKEMON.pokemon.length;i++){ 
-     cards = `<div id="pokemon-card" class="pokemon-card" >
-        <img src="${element.image}"></img>
-        <p>${element.num}</p>
-        <p>${element.name}</p>
-        <p>Tipo: ${element.type}</p>
-        <p>Dulces para evolucionar ${element.candy_count}</p> </div>`;
+// console.log(element.image);
+// const print = (data)=>{ //Imprimir la data
+//     for(let i =0; i<POKEMON.pokemon.length;i++){ 
+//      cards = `<div id="pokemon-card" class="pokemon-card" >
+//         <img src="${element.image}"></img>
+//         <p>${element.num}</p>
+//         <p>${element.name}</p>
+//         <p>Tipo: ${element.type}</p>
+//         <p>Dulces para evolucionar ${element.candy_count}</p> </div>`;
         
-       console.log(element.image);
-        const root = document.getElementById('pokemon-card');
-        cards += root.insertAdjacentHTML('afterbegin', cards);
-    }  
-};
+//        console.log(element.image);
+//         const root = document.getElementById('pokemon-card');
+//         cards += root.insertAdjacentHTML('afterbegin', cards);
+//     }  
+// };
   
 
 
