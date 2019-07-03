@@ -20,7 +20,7 @@
 .content-style{
   width: 70%;
   height: 60vh;
-  background-color: cornflowerblue;
+  background-color: blue;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -36,16 +36,16 @@
   width: 100%;
 }
 .card{
-  width: 27%;
+  width: 20%;
   height: 38vh;
-  background-color: aquamarine;
-  border: 2px solid red;
+  background-color: #CFD8E8;
+  border: 3px solid black;
   border-radius: 9%;
   display: inline-block;
   margin: 1%;
 }
 .card-image{
-  background-color: blueviolet;
+  background-color: white;
   border-top-right-radius: 8%;
   border-top-left-radius: 9%;
 }
@@ -56,9 +56,10 @@
   top: 0;
 }
 .card-text{
-  text-align: center;
+  width: 20%;
+  height: 10vh;
   font-size: 14px;
-
+  color: black;
 
 }
 
