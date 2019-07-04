@@ -8,6 +8,13 @@ window.dataManager = {
     return filterType;
   },
 
+  //Función pura para filtrar por Debilidades
+  filterByWeaknes: (data,weaknessValue)=>{
+    let filterWeaknesses = data.filter (element => element.weaknesses.find((weaknesses)=>weaknesses==weaknessValue));
+    
+    return filterWeaknesses;
+  
+  },
   //Funcion pura para filtrar probabilidad de mayor a menor.
     filterMayor: (data,filterProbability)=>{
       // console.log(filterProbability)

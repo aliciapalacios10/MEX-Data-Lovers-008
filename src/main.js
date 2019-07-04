@@ -2,6 +2,16 @@ const data = window.POKEMON.pokemon;
 const card = document.getElementById('content-card');
 const selectType = document.getElementById("filter-type");
 const selectProbability = document.getElementById('probability');
+const selectWeaknesses = document.getElementById('weaknesses');
+
+
+// for(let j=0;j<data.name.lenght;j++){
+
+//     console.log(data[j].name);
+// }
+
+console.log(data    );
+
 
 //FUNCION PARA IMPRIMIR DATA EN TARJETAS
 const printData = (data)=>{ 
@@ -29,7 +39,7 @@ let filterType = (ev) => {
     let filterType= data;
     if (typeValue==="all-types"){
         filterType= printData(filterType);
-        console.log(data);
+        // console.log(data);
     }
     else { 
      filterType = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
@@ -51,8 +61,21 @@ selectProbability.addEventListener("change",filterProbability);
 
 //console.log(selectProbability);
 
+//FUNCIÓN PARA FILTRAR POR DEBILIDADES
+
+let filterWeaknesses =(ev)=>{
+    const weaknessesValue = ev.target.value;
+    const filterWeaknesses = window.dataManager.filterByWeaknes(data,weaknessesValue);
+    console.log(weaknessesValue);
+        printData(filterWeaknesses);
+}
+
+selectWeaknesses.addEventListener("change",filterWeaknesses);
+
 
 printData(data);
+
+
 
 
 
