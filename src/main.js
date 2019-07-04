@@ -5,7 +5,7 @@ const selectProbability = document.getElementById('probability');
 
 //FUNCION PARA IMPRIMIR DATA EN TARJETAS
 const printData = (data)=>{ 
-    console.log(data)
+    // console.log(data)
 let str = ''
     data.forEach(element => { //Ejecuta la funcion una vez por cada elemento
          str += `<div class="card">
@@ -26,8 +26,15 @@ let str = ''
 //FUNCION PARA FILTRAR
 let filterType = (ev) => {
     const typeValue = ev.target.value; //Guardando el valor del selector de tipo
-    const filterType = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
+    let filterType= data;
+    if (typeValue==="all-types"){
+        filterType= printData(filterType);
+        console.log(data);
+    }
+    else { 
+     filterType = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
     printData(filterType); // Reutilizando la funcion para imprimir por tipo sobre las tarjetas
+    }
 };
 
 selectType.addEventListener("change",filterType); // Dandole evento change al selector 
