@@ -13,18 +13,19 @@
   }
 .main-style{
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-color: blue;
   display: flex;
 }
 .content-style{
   width: 70%;
-  height: 60vh;
+  height: 68vh;
   background-color: blue;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  overflow: scroll;
 }
 /*.content-style{
   width: 100%;
@@ -62,5 +63,3 @@
   color: black;
 
 }
-
-//
