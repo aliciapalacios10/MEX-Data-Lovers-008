@@ -10,7 +10,7 @@ const selectWeaknesses = document.getElementById('weaknesses');
 //     console.log(data[j].name);
 // }
 
-console.log(data    );
+console.log(data   );
 
 
 //FUNCION PARA IMPRIMIR DATA EN TARJETAS
@@ -65,11 +65,17 @@ selectProbability.addEventListener("change",filterProbability);
 
 let filterWeaknesses =(ev)=>{
     const weaknessesValue = ev.target.value;
-    const filterWeaknesses = window.dataManager.filterByWeaknes(data,weaknessesValue);
+    let filterWeaknes= data;
+    if(weaknessesValue=="all-weaknesses"){
+        filterWeaknes= printData(filterWeaknes);
+    }
+
+    else{
+    filterWeaknesses = window.dataManager.filterByWeaknes(data,weaknessesValue);
     console.log(weaknessesValue);
         printData(filterWeaknesses);
 }
-
+}
 selectWeaknesses.addEventListener("change",filterWeaknesses);
 
 
