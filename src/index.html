@@ -15,8 +15,8 @@
 
   <nav class="menu">
     <section class="filter-bar">
-      <select class = "filter-type" id = "filter-type">
-        <option value="">Tipo</option>       
+      <select class ="filter-type" id = "filter-type">
+        <option value="all-types">Tipo</option>       
         <option id="Water" value="Water">Agua</option>
         <option id="Bug" value="Bug">Bicho</option>
         <option id="Dragon" value="Dragon">Dragón</option>
@@ -34,15 +34,33 @@
         <option id="Flying" value="Flying">Volador</option>
       </select>
 
-      <select name="probability" id="probability">
-        <option value="">Probabilidad</option>
-        <option value="">Mayor a menor</option>
-        <option value="">Menor a mayor</option>
+      <select class="probability" id="probability">
+        <option value="all-probabilities">Probabilidad</option>
+        <option id="mayor probability " value="mayor-probability">Mayor a menor</option>
+        <option id="menor-probability" value="menor-probability">Menor a mayor</option>
       </select>
 
-      <select name="debilidades" id="debilidades">
-        <option value="">Debilidades</option>
-      </select>
+      <select class = "weaknesses" id="weaknesses">
+        <option value="all-weaknesses">Debilidades</option>
+        <option id="Water" value="Water">Agua</option>
+        <option id="Bug" value="Bug">Bicho</option>
+        <option id="Dragon" value="Dragon">Dragón</option>
+        <option id="Electric" value="Electric">Eléctrico</option>
+        <option id="Ghost" value="Ghost">Fantasma</option>
+        <option id="Fire" value="Fire">Fuego</option>
+        <option id="Ice" value="Ice">Hielo</option>
+        <option id="Fighting" value="Fighting">Lucha</option>
+        <!-- <option id="Normal" value="Normal">Normal</option> -->
+        <option id="Grass" value="Grass">Planta</option>
+        <option id="Psychic" value="Psychic">Psíquico</option>
+        <option id="Rock" value="Rock">Roca</option>
+        <option id="Ground" value="Ground">Tierra</option>
+        <option id="Poison" value="Poison">Veneno</option>
+        <option id="Flying" value="Flying">Volador</option>
+        <option value="Dark">Oscuro</option>
+        <option value="Steel">Acero</option>
+        <option value="Fairy">Hada</option>
+        </select>
     </section>
   </nav>
 
@@ -77,4 +95,4 @@
 
 
 
-  //
+  
