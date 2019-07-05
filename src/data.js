@@ -16,7 +16,7 @@ window.dataManager = {
   
   },
   //Funcion pura para filtrar probabilidad de mayor a menor.
-    filterMayor: (data,filterProbability)=>{
+    filterByProbabilities: (data,filterProbability)=>{
       // console.log(filterProbability)
       let result = data.sort((a,b) => {
         if(filterProbability== 'mayor-probability'){
