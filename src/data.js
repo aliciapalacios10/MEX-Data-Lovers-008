@@ -7,5 +7,5 @@ window.dataManager = {
     //console.log (filterType);
     return filterType;
   },
-
+  
 };

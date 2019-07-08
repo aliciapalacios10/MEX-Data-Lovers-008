@@ -3,66 +3,69 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Data Lovers</title>
+  <title>Data Lover</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-  <div id="root"></div>
-  <header class="header">
-    <img src="./imagenes/Pokémon_logo.svg.png" width="25%" alt="Logo Pokémon">
-  </header>
+  <div class="container">
+    <header class="header col-12">
+      <div class="row logo">
+        <div class="col-4">
+          <figure>
+            <img src="./imagenes/Pokémon_logo.svg.png" width="50%" alt="Logo Pokémon">
+          </figure>
+        </div>
+        <div class="col-3"></div>
+        <div class="menu-container col-5">
+          <section class="filter-bar">
+            <select class="filter-type" id="filter-type">
+              <option value="">Tipo</option>
+              <option id="Water" value="Water">Agua</option>
+              <option id="Bug" value="Bug">Bicho</option>
+              <option id="Dragon" value="Dragon">Dragón</option>
+              <option id="Electric" value="Electric">Eléctrico</option>
+              <option id="Ghost" value="Ghost">Fantasma</option>
+              <option id="Fire" value="Fire">Fuego</option>
+              <option id="Ice" value="Ice">Hielo</option>
+              <option id="Fighting" value="Fighting">Lucha</option>
+              <option id="Normal" value="Normal">Normal</option>
+              <option id="Grass" value="Grass">Planta</option>
+              <option id="Psychic" value="Psychic">Psíquico</option>
+              <option id="Rock" value="Rock">Roca</option>
+              <option id="Ground" value="Ground">Tierra</option>
+              <option id="Poison" value="Poison">Veneno</option>
+              <option id="Flying" value="Flying">Volador</option>
+            </select>
 
-  <nav class="menu">
-    <section class="filter-bar">
-      <select class = "filter-type" id = "filter-type">
-        <option value="">Tipo</option>       
-        <option id="Water" value="Water">Agua</option>
-        <option id="Bug" value="Bug">Bicho</option>
-        <option id="Dragon" value="Dragon">Dragón</option>
-        <option id="Electric" value="Electric">Eléctrico</option>
-        <option id="Ghost" value="Ghost">Fantasma</option>
-        <option id="Fire" value="Fire">Fuego</option>
-        <option id="Ice" value="Ice">Hielo</option>
-        <option id="Fighting" value="Fighting">Lucha</option>
-        <option id="Normal" value="Normal">Normal</option>
-        <option id="Grass" value="Grass">Planta</option>
-        <option id="Psychic" value="Psychic">Psíquico</option>
-        <option id="Rock" value="Rock">Roca</option>
-        <option id="Ground" value="Ground">Tierra</option>
-        <option id="Poison" value="Poison">Veneno</option>
-        <option id="Flying" value="Flying">Volador</option>
-      </select>
+            <select class="probability" id="probability">
+              <option value="">Probabilidad</option>
+              <option value="">Mayor a menor</option>
+              <option value="">Menor a mayor</option>
+            </select>
 
-      <select name="probability" id="probability">
-        <option value="">Probabilidad</option>
-        <option value="">Mayor a menor</option>
-        <option value="">Menor a mayor</option>
-      </select>
-
-      <select name="debilidades" id="debilidades">
-        <option value="">Debilidades</option>
-      </select>
-    </section>
-  </nav>
-
-  <main>
-    <section id="main-content" class="main-style">
-      <div id="content" class="content-style">
-        <div id="content-card" class="pokemon-card" >
-
+            <select name="debilidades" id="debilidades">
+              <option value="">Debilidades</option>
+            </select>
+          </section>
         </div>
       </div>
+    </header>
 
-    </section>
+    <main class="main-container col-12">
+      <!--<div class="content col-8">-->
+    
+      <article class="background-card col-8">
+        <section id="content-card" class="pokemon-card">
+        </section>
+      </article>
+
+      <aside class="curious-fact-container col-4">
+      </aside>
+  </div>
   </main>
-
-  <!-- PRUEBA PARA JALAR EL TIPO -->
-<div class= "resultado">
-
-
-
-</div>
+  </div>
 
   <!-- <script src="./data/injuries/injuries.js"></script> -->
   <script src="./data/pokemon/pokemon.js"></script>
@@ -74,7 +77,3 @@
 </body>
 
 </html>
-
-
-
-  //
