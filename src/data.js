@@ -7,6 +7,9 @@ window.dataManager = {
     //console.log (filterType);
     return filterType;
   },
+<<<<<<< HEAD
+  
+=======
 
   //Función pura para filtrar por Debilidades
   filterByWeaknes: (data,weaknessValue)=>{
@@ -50,4 +53,5 @@ window.dataManager = {
     }
 
 
+>>>>>>> 19ef055cb5dce302dad18ba4bfbf17eb3837bbd7
 };

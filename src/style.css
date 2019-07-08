@@ -1,16 +1,49 @@
-  .header {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    height: 20vh;
+  *{
+    padding: 0%;
+    margin: 0%;
   }
-  .menu{
-    background-color: #1b2127;
-    display: flex;
-    justify-content: center;
-    height: 10vh;
-    align-items: center;
+  .container{
+    width: 100%;
+    /* max-width: 1280px; */
+    margin: 0px auto;
+    /*background-color: #2f4e6f;*/
+    background-color: #98b1c4;
   }
+  .header{
+    display: flex;
+    height: 13vh;
+    background-color: #2f4e6f;
+  }
+  .row{
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+ 
+  .logo{
+    background-color: #2f4e6f;
+    display: flex;
+    height: 13vh;
+  }
+<<<<<<< HEAD
+
+  /*DISEÑO DE MENU*/
+  .menu-container{
+    /*background-color: black;*/
+    background-color: #2f4e6f;
+    display: inline-block;
+    height: 13vh;
+  }
+select{
+  background-color: #98b1c4;
+  width: 27%;
+  height: 7vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 3%;
+=======
 .main-style{
   width: 100%;
   height: 70vh;
@@ -26,40 +59,107 @@
   margin-right: auto;
   text-align: center;
   overflow: scroll;
+>>>>>>> 19ef055cb5dce302dad18ba4bfbf17eb3837bbd7
 }
-/*.content-style{
-  width: 100%;
-  height: 60vh;
-  background-color: blue;
+option{
+background-color: #c8d7e3;
+}
+  .main-container{
+  height: 85vh;
+  /*background-color: #08658e;*/
   display: flex;
-}*/
-.pokemon-card{
-  width: 100%;
-}
-.card{
-  width: 20%;
-  height: 38vh;
-  background-color: #CFD8E8;
-  border: 3px solid black;
-  border-radius: 9%;
-  display: inline-block;
-  margin: 1%;
-}
-.card-image{
-  background-color: white;
-  border-top-right-radius: 8%;
-  border-top-left-radius: 9%;
-}
-.card-img img{
-  float: left;
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-.card-text{
-  width: 20%;
-  height: 10vh;
-  font-size: 14px;
-  color: black;
+  text-align: center;
+  }
 
+  /*DISEÑO DE SCROLL*/
+  .background-card{
+    overflow-y: scroll;
+  }
+  .background-card::-webkit-scrollbar {
+    /*background-color: antiquewhite;*/
+    /*background-color: #98b1c4;*/
+    background-color: #c8d7e3;
+    border-radius: 1rem;
 }
+.background-card::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 1rem;
+    height: 5rem;
+}
+.background-card::-webkit-scrollbar-thumb:hover {
+    /*background: rgb(230, 148, 41);*/
+    background: #2f4e6f;
+    border-radius: 1rem;
+    height: 5rem;
+}
+
+  /*DISEÑO DE TARJETA POKEMON*/
+  .pokemon-card{
+  width: 100%;
+  }
+  .card{
+  /*background-color: antiquewhite;*/
+  /*background-color: #98b1c4;*/
+  background-color: #c8d7e3;
+  display: inline-block;
+  margin: 2%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  -webkit-box-shadow: -3px 6px 20px -1px rgba(74,74,74,1);
+  -moz-box-shadow: -3px 6px 20px -1px rgba(74,74,74,1);
+   box-shadow: -3px 6px 20px -1px rgba(74,74,74,1);
+  }
+  .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+  .card-image{
+  height: 30vh;
+  }
+  .card-image img{
+  width: 27vh;
+  padding: 1%
+  }
+  .card-text{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14pt;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  }
+  .curious-fact-container{
+    display: flex;
+    background-color: forestgreen;
+    height: 35vh;
+    }
+
+<<<<<<< HEAD
+
+/*TAMAÑOS DEL GRID*/
+.col-1{width: 8.333333333333332%;}
+.col-2{width: 16.666666666666664%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33333333333333%;}
+.col-5{width: 41.66666666666667%;}
+.col-6{width: 50%;}
+.col-7{width: 58.333333333333336%;}
+.col-8{width: 66.66666666666666%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33333333333334%;}
+.col-11{width: 91.66666666666666%;}
+.col-12{width: 100%;}
+
+
+@media screen and (max-width: 778px){
+
+  .media{
+ 
+   width: 100%;
+  }
+=======
+}
+>>>>>>> 19ef055cb5dce302dad18ba4bfbf17eb3837bbd7

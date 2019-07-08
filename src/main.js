@@ -10,11 +10,12 @@ const printData = (data)=>{
     // console.log(data)
 let str = ''
     data.forEach(element => { //Ejecuta la funcion una vez por cada elemento
-         str += `<div class="card">
+         str += `
+         
+         <div class="card col-3">
          <div class="card-image"><img src="${element.img}"></img></div>
          <div class="card-text">
-         <p>${element.name}</p>
-         <p>Probabilidad: ${element.spawn_chance} </p>
+         <p><strong>${element.name}</strong></p>
          <p>${element.num}</p>
          <p> Tipo: ${element.type[0]} , ${element.type[1]}</p>
           
