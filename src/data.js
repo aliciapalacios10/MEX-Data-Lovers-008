@@ -25,7 +25,7 @@ window.dataManager = {
          if(a.spawn_chance > b.spawn_chance){
            return -1;
          }
-         return 0
+         return 0;
        }
        else if (filterProbability== 'menor-probability'){
          if(a.spawn_chance > b.spawn_chance){
@@ -33,10 +33,10 @@ window.dataManager = {
          }        if(a.spawn_chance < b.spawn_chance){
            return -1;
          }
-          return 0
+          return 0;
        }      return result;
        // console.log(a.spawn_chance, b.spawn_chance);      
-      })      
+      });    
        // let filterMayorProbability = data.sort(a,b )
-     return result    
+     return result; 
     }};
