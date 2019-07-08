@@ -28,10 +28,10 @@ let str = '';
 let filterType = (ev) => {
     const typeValue = ev.target.value; //Guardando el valor del selector de tipo
     let filterTypeSelect= data;
-    console.log(data);
+    // console.log(data);
     if (typeValue==="all-types"){
         printData(POKEMON.pokemon);
-        console.log(filterTypeSelect);
+        // console.log(filterTypeSelect);
     }
     else { 
      filterTypeSelect = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
