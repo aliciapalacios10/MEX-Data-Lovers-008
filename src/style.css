@@ -25,6 +25,7 @@
     display: flex;
     height: 13vh;
   }
+<<<<<<< HEAD
 
   /*DISEÑO DE MENU*/
   .menu-container{
@@ -42,6 +43,23 @@ select{
   text-align: center;
   margin-top: 3%;
   margin-left: 3%;
+=======
+.main-style{
+  width: 100%;
+  height: 70vh;
+  background-color: blue;
+  display: flex;
+}
+.content-style{
+  width: 70%;
+  height: 68vh;
+  background-color: blue;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: scroll;
+>>>>>>> 19ef055cb5dce302dad18ba4bfbf17eb3837bbd7
 }
 option{
 background-color: #c8d7e3;
@@ -119,6 +137,7 @@ background-color: #c8d7e3;
     height: 35vh;
     }
 
+<<<<<<< HEAD
 
 /*TAMAÑOS DEL GRID*/
 .col-1{width: 8.333333333333332%;}
@@ -141,3 +160,6 @@ background-color: #c8d7e3;
  
    width: 100%;
   }
+=======
+}
+>>>>>>> 19ef055cb5dce302dad18ba4bfbf17eb3837bbd7

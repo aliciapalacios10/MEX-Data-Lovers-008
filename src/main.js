@@ -1,10 +1,13 @@
 const data = window.POKEMON.pokemon;
 const card = document.getElementById('content-card');
 const selectType = document.getElementById("filter-type");
-const selectProbability = document.getElementById('filter-probability');
+const selectProbability = document.getElementById('probability');
+const selectWeaknesses = document.getElementById('weaknesses');
+// let allData = data;
 
 //FUNCION PARA IMPRIMIR DATA EN TARJETAS
 const printData = (data)=>{ 
+    // console.log(data)
 let str = ''
     data.forEach(element => { //Ejecuta la funcion una vez por cada elemento
          str += `
@@ -23,24 +26,61 @@ let str = ''
     card.innerHTML = str;
 };
 
-//FUNCION PARA FILTRAR
+//FUNCION PARA FILTRAR POR TIPO
 let filterType = (ev) => {
     const typeValue = ev.target.value; //Guardando el valor del selector de tipo
-    const filterType = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
-    printData(filterType); // Reutilizando la funcion para imprimir por tipo sobre las tarjetas
+    let filterTypeSelect= data;
+    console.log(data)
+    if (typeValue==="all-types"){
+        printData(POKEMON.pokemon );
+        console.log(filterTypeSelect);
+    }
+    else { 
+     filterTypeSelect = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
+    printData(filterTypeSelect); // Reutilizando la funcion para imprimir por tipo sobre las tarjetas
+    }
 };
 
 selectType.addEventListener("change",filterType); // Dandole evento change al selector 
 
+//FUNCION PARA FILTRA LA PROBABILIDAD DE MAYOR A MENOR
+let filterProbability = (ev)=>{
+    const probabilityValue = ev.target.value;//Guardando el valor del selector de probabilidad
+    let filterProbabilitySelect = data;
 
-//Filtrar por probabilidad
-let filterProbability = (ev) =>{
-    const probabilityValue = ev.target.value;
+    if (probabilityValue === 'all-probabilities'){
+        filterProbabilitySelect = printData(filterProbabilitySelect);
+        console.log(probabilityValue);
+    }
+    else{
+    filterProbabilitySelect = window.dataManager.filterByProbabilities(data,probabilityValue);
+    printData(filterProbabilitySelect);
+    }
 }
+selectProbability.addEventListener("change",filterProbability);
 
+//console.log(selectProbability);
+
+//FUNCIÓN PARA FILTRAR POR DEBILIDADES
+
+let filterWeaknesses =(ev)=>{
+    const weaknessesValue = ev.target.value;
+    let filterWeaknesSelect= data;
+    if(weaknessesValue=="all-weaknesses"){
+        filterWeaknesSelect= printData(filterWeaknesSelect);
+    }
+    else{
+    filterWeaknessesSelect = window.dataManager.filterByWeaknes(data,weaknessesValue);
+    console.log(weaknessesValue);
+        printData(filterWeaknessesSelect);
+}
+}
+selectWeaknesses.addEventListener("change",filterWeaknesses);
 
 
 printData(data);
+
+
 
 
 
