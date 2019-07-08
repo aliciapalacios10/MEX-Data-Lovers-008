@@ -31,7 +31,7 @@ let filterType = (ev) => {
     let filterTypeSelect= data;
     console.log(data)
     if (typeValue==="all-types"){
-        printData(POKEMON.pokemon );
+        printData(POKEMON.pokemon);
         console.log(filterTypeSelect);
     }
     else { 
