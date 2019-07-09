@@ -30,7 +30,7 @@ let filterType = (ev) => {
     let filterTypeSelect= data;
     // console.log(data);
     if (typeValue==="all-types"){
-        printData(POKEMON.pokemon);
+        printData(data);
         // console.log(filterTypeSelect);
     }
     else { 
@@ -53,12 +53,13 @@ let filterProbability = (ev)=>{
 selectProbability.addEventListener("change",filterProbability);//console.log(selectProbability);//FUNCIÓN PARA FILTRAR POR DEBILIDADESlet filterWeaknesses =(ev)=>{
 let filterWeaknesses =(ev)=>{  
 const weaknessesValue = ev.target.value;
-   let filterWeaknesSelect= data;
+//    let filterWeaknesSelect=;
    if(weaknessesValue=="all-weaknesses"){
-       filterWeaknesSelect= printData(filterWeaknesSelect);
+    //    filterWeaknesSelect= printData(filterWeaknesSelect);
+    printData(data);
    }
    else{
-   filterWeaknessesSelect = window.dataManager.filterByWeaknes(data,weaknessesValue);
+   let filterWeaknessesSelect = window.dataManager.filterByWeaknes(data,weaknessesValue);
    console.log(weaknessesValue);
        printData(filterWeaknessesSelect);
     }
