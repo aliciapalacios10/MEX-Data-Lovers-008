@@ -70,6 +70,12 @@ selectWeaknesses.addEventListener("change",filterWeaknesses);printData(data);
 
 printData(data);//pinta toda la data.
 
+
+//PRUEBA PARA TEST
+
+console.log(window.dataManager.filterByType(data,"Ice"));
+
+
 //FUNCION PRUEBA PARA FILTRAR
 // const grassPokemon= data.filter(function(element){
 //     console.log(element.type);
@@ -85,4 +91,11 @@ printData(data);//pinta toda la data.
 //     <p>Dulces para evolucionar ${element.candy_count}</p> </div>`;//     printCards.insertAsJacentHTML('afterbegin',cards)
 //     return print;//     const root = document.getElementById('pokemon-card');
 //     cards += root.insertAdjacentHTML('afterbegin', cards);
+// }
+
+// for(let i=0;i<POKEMON.pokemon.length;i++){
+
+// console.log(POKEMON.pokemon[i].type);
+
+
 // }

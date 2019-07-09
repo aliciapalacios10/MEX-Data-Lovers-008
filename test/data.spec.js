@@ -1,16 +1,3 @@
-// require('../src/data.js');
-
-
-// describe('example', () => {
-//   it('is a function', () => {
-//     expect(typeof example).toBe('function');
-//   });
-
-//   it('returns `example`', () => {
-//     expect(example()).toBe('example');
-//   });
-// });
-
 
 require('../src/data.js');
 require('../src/data/pokemon/pokemon.js');//la Data
@@ -28,6 +15,7 @@ describe('dataManager',()=>{
 
     it('Returns " nombre de los pokemones de tipo Hielo"',()=>{
       expect(window.dataManager.filterByType(window.POKEMON.pokemon.name,"Ice").toBe('Dewgong','Cloyster','Jynx','Lapras','Articuno'));
+      
     });
 
   });
@@ -49,7 +37,7 @@ describe('dataManager',()=>{
     });
 
     it('Returns "pokemones con la mayor probabilidad de ser encontrados"',()=>{
-      expect(window.dataManager.filterByProbabilities(window.POKEMON.pokemon,"mayor-probability").toBe());
+      expect(window.dataManager.filterByProbabilities(window.POKEMON.pokemon,"mayor-probability").toBe("algo"));
     });
 
   });
@@ -108,6 +96,8 @@ describe('dataManager',()=>{
 //     expect(example()).toBe('example');
 //   });
 // });
+
+//Error test 
 
 
 
