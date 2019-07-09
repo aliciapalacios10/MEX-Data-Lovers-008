@@ -3,25 +3,37 @@ const card = document.getElementById('content-card');
 const selectType = document.getElementById("filter-type");
 const selectProbability = document.getElementById('probability');
 const selectWeaknesses = document.getElementById('weaknesses');
+const curiousFactContainer = document.getElementById('curious-fact-container')
 // let allData = data;
 
 //FUNCION PARA IMPRIMIR DATA EN TARJETAS
 const printData = (data)=>{
-   // console.log(data)
-let str = ''
-   data.forEach(element => { //Ejecuta la funcion una vez por cada elemento
-        str += `<div class="card col-3">
-        <div class="card-image"><img src="${element.img}"></img></div>
-        <div class="card-text">
-        <p><strong>${element.name}</strong></p>
-        <p>Probabilidad: ${element.spawn_chance} </p>
-        <p>${element.num}</p>
-        <p> Tipo: ${element.type[0]} , ${element.type[1]}</p>        
-        </div>
-        </div>`    
-    });
-   card.innerHTML = str;
+    let str = ''
+    let totalKmOfEgg = 0; //Contador que guarda lo km 
 
+   // console.log(data)
+   data.forEach(element => { //Ejecuta la funcion una vez por cada elemento
+    // totalKmOfEgg += parseFloat(element.egg)
+    const km = element.egg.substr(0,2 ) 
+    if(km !== 'No' && km !== 'Om'){
+        const kmEgg = parseInt(km)
+       totalKmOfEgg +=  kmEgg
+    }
+    str += `<div class="card col-3">
+    <div class="card-image"><img src="${element.img}" width=10% ></div>
+    <div class="card-text">
+    <p><strong>${element.name}</strong></p>
+    <p>Probabilidad: ${element.spawn_chance} </p>
+    <p>${element.num}</p>
+    <p> Tipo: ${element.type[0]} , ${element.type[1]}</p>        
+    </div>
+    </div>`    
+});
+card.innerHTML = str;
+const averageOfEgg = totalKmOfEgg / data.length;
+console.log(totalKmOfEgg)
+curiousFactContainer.innerHTML = 'Total de Km por recorrer: ' + totalKmOfEgg
+//    curiousFactContainer.innerHTML = data.length;
 };
 
 //FUNCION PARA FILTRAR POR TIPO
@@ -63,7 +75,8 @@ const weaknessesValue = ev.target.value;
        printData(filterWeaknessesSelect);
     }
 }
-selectWeaknesses.addEventListener("change",filterWeaknesses);printData(data);
+selectWeaknesses.addEventListener("change",filterWeaknesses);
+
 
 
 

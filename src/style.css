@@ -7,12 +7,14 @@
   /* max-width: 1280px; */
   margin: 0px auto;
   /*background-color: #2f4e6f;*/
-  background-color: #98b1c4;
+  /*background-color: #98b1c4;*/
+  background-color: #8ebd99;
 }
 .header{
   display: flex;
   height: 13vh;
-  background-color: #2f4e6f;
+  /*background-color: #2f4e6f;*/
+  background-color: #ddc23f;
 }
 .row{
   margin: auto;
@@ -21,7 +23,8 @@
 }
 
 .logo{
-  background-color: #2f4e6f;
+  /*background-color: #2f4e6f;*/
+  background-color: #ddc23f;
   display: flex;
   height: 13vh;
 }
@@ -29,12 +32,14 @@
 /*DISEÑO DE MENU*/
 .menu-container{
   /*background-color: black;*/
-  background-color: #2f4e6f;
+  /*background-color: #2f4e6f;*/
+  background-color: #ddc23f;
   display: inline-block;
   height: 13vh;
 }
 select{
-background-color: #98b1c4;
+/*background-color: #98b1c4;*/
+background-color: #8ebd99;
 width: 27%;
 height: 7vh;
 font-family: 'Josefin Sans', sans-serif;
@@ -60,7 +65,8 @@ text-align: center;
 .background-card::-webkit-scrollbar {
   /*background-color: antiquewhite;*/
   /*background-color: #98b1c4;*/
-  background-color: #c8d7e3;
+  /*background-color: #c8d7e3;*/
+  background-color: #B2E7BE;
   border-radius: 1rem;
 }
 .background-card::-webkit-scrollbar-thumb {
@@ -82,7 +88,8 @@ width: 100%;
 .card{
 /*background-color: antiquewhite;*/
 /*background-color: #98b1c4;*/
-background-color: #c8d7e3;
+/*background-color: #c8d7e3;*/
+background-color: #CEFAD8;
 display: inline-block;
 margin: 2%;
 border-top-left-radius: 10%;
@@ -101,7 +108,7 @@ border-bottom-left-radius: 10%;
 height: 30vh;
 }
 .card-image img{
-width: 27vh;
+width: 95%;
 padding: 1%
 }
 .card-text{
@@ -113,7 +120,7 @@ text-align: center;
 border-bottom-right-radius: 10%;
 border-bottom-left-radius: 10%;
 }
-.curious-fact-container{
+.curious-fact{
   display: flex;
   background-color: forestgreen;
   height: 35vh;
@@ -134,7 +141,20 @@ border-bottom-left-radius: 10%;
 .col-11{width: 91.66666666666666%;}
 .col-12{width: 100%;}
 
+/*MEDIDAS CON MEDIA QUERIES*/
+.row:before, .row:after{
 
+  content:"";
+ 
+  display:table;
+ 
+ }
+ 
+ .row:after{
+ 
+  clear:both;
+ 
+ }
 @media screen and (max-width: 778px){
 
 .media{
