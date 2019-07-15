@@ -1,7 +1,7 @@
-# Data Lovers
+# POKEGUÍA
 
 ## Descripción del Proyecto
-
+POKEGUÍA es una página web donde los usuarios podrán encontrar los pokémones de la región Kanto, podrán encontrar datos relevantes de cada uno de ellos, así como también filtrar de acuerdo a su tipo, a sus debilidades y a su probabilidad de ser encontrados.
 
 ## Objetivo del Proyecto
 
@@ -82,7 +82,7 @@ Este Proyecto se realizo en HTML, JavaScript y CSS
 
 ## ¿Cómo ejecutar este Proyecto?
 
-Desde tu navegador da click en el siguiente link: 
+Desde tu navegador da click en el siguiente link: https://aliciapalacios10.github.io/MEX-Data-Lovers-008/src/index.html
 
 ## Pasos para descargar, instalar y ejecutar la aplicación
 
