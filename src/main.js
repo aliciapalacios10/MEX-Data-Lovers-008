@@ -3,36 +3,35 @@ const card = document.getElementById('content-card');
 const selectType = document.getElementById("filter-type");
 const selectProbability = document.getElementById('probability');
 const selectWeaknesses = document.getElementById('weaknesses');
-const curiousFactContainer = document.getElementById('curious-fact-container')
+const curiousFactContainer = document.getElementById('curious-fact-container');
 // let allData = data;
 
 //FUNCION PARA IMPRIMIR DATA EN TARJETAS
 const printData = (data)=>{
-    let str = ''
+    let str = '';
     let totalKmOfEgg = 0; //Contador que guarda lo km 
 
    // console.log(data)
    data.forEach(element => { //Ejecuta la funcion una vez por cada elemento
     // totalKmOfEgg += parseFloat(element.egg)
-    const km = element.egg.substr(0,2 ) 
+    const km = element.egg.substr(0,2 ); 
     if(km !== 'No' && km !== 'Om'){
-        const kmEgg = parseInt(km)
-       totalKmOfEgg +=  kmEgg
+        const kmEgg = parseInt(km);
+       totalKmOfEgg +=  kmEgg;
     }
     str += `<div class="card col-3">
-    <div class="card-image"><img src="${element.img}" width=10% ></div>
-    <div class="card-text">
+    <img src="${element.img}" width=100% >
     <p><strong>${element.name}</strong></p>
-    <p>Probabilidad: ${element.spawn_chance} </p>
     <p>${element.num}</p>
+    <p>Probabilidad: ${element.spawn_chance} % </p>
     <p> Tipo: ${element.type[0]} , ${element.type[1]}</p>        
-    </div>
-    </div>`    
+    </div>`;    
 });
 card.innerHTML = str;
 const averageOfEgg = totalKmOfEgg / data.length;
-console.log(totalKmOfEgg)
-curiousFactContainer.innerHTML = 'Total de Km por recorrer: ' + totalKmOfEgg
+console.log(totalKmOfEgg);
+curiousFactContainer.innerHTML = 
+'<br><p><strong>Dato Curioso</p></strong><br> <p>Total de Km por recorrer:</p> ' + totalKmOfEgg;
 //    curiousFactContainer.innerHTML = data.length;
 };
 
@@ -40,10 +39,10 @@ curiousFactContainer.innerHTML = 'Total de Km por recorrer: ' + totalKmOfEgg
 let filterType = (ev) => {
    const typeValue = ev.target.value; //Guardando el valor del selector de tipo
    let filterTypeSelect= data;
-   console.log(data)
+   //console.log(data);
    if (typeValue==="all-types"){
        printData(POKEMON.pokemon);
-       console.log(filterTypeSelect);
+       //console.log(filterTypeSelect);
    }
    else {
     filterTypeSelect = window.dataManager.filterByType(data,typeValue); //llamando la funcion desde el objeto global window para filtrar tipos
@@ -55,13 +54,13 @@ let filterProbability = (ev)=>{
    const probabilityValue = ev.target.value;//Guardando el valor del selector de probabilidad
    let filterProbabilitySelect = data;    if (probabilityValue === 'all-probabilities'){
        filterProbabilitySelect = printData(filterProbabilitySelect);
-       console.log(probabilityValue);
+       //console.log(probabilityValue);
    }
    else{
    filterProbabilitySelect = window.dataManager.filterByProbabilities(data,probabilityValue);
    printData(filterProbabilitySelect);
    }
-}
+};
 selectProbability.addEventListener("change",filterProbability);//console.log(selectProbability);//FUNCIÓN PARA FILTRAR POR DEBILIDADESlet filterWeaknesses =(ev)=>{
 let filterWeaknesses =(ev)=>{  
 const weaknessesValue = ev.target.value;
@@ -71,10 +70,10 @@ const weaknessesValue = ev.target.value;
    }
    else{
    filterWeaknessesSelect = window.dataManager.filterByWeaknes(data,weaknessesValue);
-   console.log(weaknessesValue);
+   //console.log(weaknessesValue);
        printData(filterWeaknessesSelect);
     }
-}
+};
 selectWeaknesses.addEventListener("change",filterWeaknesses);
 
 

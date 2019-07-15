@@ -36,7 +36,7 @@ window.dataManager = {
           return 0;
        }      return result;
        // console.log(a.spawn_chance, b.spawn_chance);      
-      })      
+      });      
        // let filterMayorProbability = data.sort(a,b )
-     return result    
+     return result;    
     }};
