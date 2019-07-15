@@ -11,12 +11,12 @@ Crear una página web visualmente agradable, responsiva y fácil de usar, creada
 Plasmamos nuestra idea de como nos gustaría visualizar la aplicación, comenzamos haciendo un Sketch de prueba de baja fidelidad
 
 ### Primer prototipo visualización en celular
-<img src=prototipo-baja-cel.png>
+<img src="prototipo-baja-cel.png">
 
 Creamos un prototipo de baja fidelidad con la aplicación Marvel, en este prototipo testeamos los botones https://marvelapp.com/417egjf/screen/58722283
 
 ### Primer prototipo visualización en escritorio
-<img src=prototipo-baja-escritorio.png>
+<img src="prototipo-baja-escritorio.png">
 
 ## Problemas encontrados
 
@@ -28,18 +28,18 @@ Por cuestión de tiempo y de prioridad decidimos eliminar el buscador, enfocando
 También decidimos cambiar los dos recuadros del lado izquierdo, el primero de ellos lo cambiamos como una sección de Dato Curioso, el recuadro de abajo lo cambiamos a un menú de opciones para filtrar la Probabilidad de encontrar a un Pokémon.
 
 ### Segundo prototipo visualización en celular
-<img src=prototipo-baja-cel-2.png>
+<img src="img-readme/prototipo-baja-cel-2.png">
 
 ### Segundo prototipo visualización en escritorio
-<img src=prototipo-baja-escritorio-2.png>
+<img src="img-readme/prototipo-baja-escritorio-2.png">
 
 ## Prototipo de alta fidelidad
 
 ### Prototipo de visualización en celular
-<img src=prototipo-alta-cel.png>
+<img src="img-readme/prototipo-alta-cel.png">
 
 ### Prototipo de visualización en escritorio
-<img src=prototipo-alta-escritorio.png>
+<img src="img-readme/prototipo-alta-escritorio.png">
 
 ## Definición del usuario.
 

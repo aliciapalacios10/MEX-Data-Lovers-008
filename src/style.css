@@ -139,6 +139,7 @@ select{
   select{
     width: 33%;
     margin-left: -2%;
+    font-size: 15px;
   }
   .curious-fact{
     display: none;
