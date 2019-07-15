@@ -56,7 +56,6 @@ describe('dataManager',()=>{
   
 
 
-
 //   describe('dataManager.filterByType', ()=>{
 
 //     it('Deberia ser una función',()=> {
