@@ -6,6 +6,10 @@ body{
  /*background-color: #3a6088;*/
  background-color: #f89746;
 }
+h1{
+  color: white;
+  font-family: 'Bungee', cursive;
+}
 .logo{
   background-color: #2a7b9b;
   height: 12vh;
@@ -111,16 +115,21 @@ select{
 
 /*MEDIDAS CON MEDIA QUERIES*/
 @media (min-width: 800px){
-
+h1{
+  font-size: 65px;
+}
  select{
    width: 17%;
-   font-size: 18px;
+   font-size: 20px;
  }
 }
 @media (min-width: 480px){
   .logo{
     /*background-color: rgb(25, 61, 95);*/
     height: 9vh;
+  }
+  h1{
+    font-size: 50px;
   }
   select{
     width: 18%;
@@ -135,6 +144,10 @@ select{
 @media (max-width: 480px){
 .logo{
   height: 8vh;
+  }
+  h1{
+    font-size: 30px;
+    text-align: center;
   }
   select{
     width: 33%;
