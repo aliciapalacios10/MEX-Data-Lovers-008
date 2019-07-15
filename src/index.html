@@ -4,21 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>Data Lover</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
-    <header class="header col-12">
-      <div class="row logo">
-        <div class="col-4">
+    <header class="header row">
+      <div class="col-12 logo">
           <figure>
-            <img src="./imagenes/Pokémon_logo.svg.png" width="50%" alt="Logo Pokémon">
+            <!--<img src="./imagenes/Pokémon_logo.svg.png" width="30%" alt="Logo Pokémon">-->
           </figure>
         </div>
-        <div class="col-3"></div>
-        <div class="menu-container col-5">
+        <div class="menu-container col-12">
           <section class="filter-bar">
             <select class="filter-type" id="filter-type">
               <option value="all-types">Tipo</option>
@@ -72,16 +71,15 @@
     </header>
 
     <main class="main-container col-12">
-      <!--<div class="content col-8">-->
 
       <article class="background-card col-8">
         <section id="content-card" class="pokemon-card">
         </section>
       </article>
 
-      <aside class="curious-fact-container col-4">
+      <aside id="curious-fact-container" class="curious-fact col-4">
       </aside>
-    </main>
+    </main>  
   </div>
 
   <!-- <script src="./data/injuries/injuries.js"></script> -->
