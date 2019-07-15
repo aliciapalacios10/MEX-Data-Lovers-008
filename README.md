@@ -11,12 +11,12 @@ Crear una página web visualmente agradable, responsiva y fácil de usar, creada
 Plasmamos nuestra idea de como nos gustaría visualizar la aplicación, comenzamos haciendo un Sketch de prueba de baja fidelidad
 
 ### Primer prototipo visualización en celular
-<img src="prototipo-baja-cel.png">
+<img src="img-readme/prototipo-baja-cel.png">
 
 Creamos un prototipo de baja fidelidad con la aplicación Marvel, en este prototipo testeamos los botones https://marvelapp.com/417egjf/screen/58722283
 
 ### Primer prototipo visualización en escritorio
-<img src="prototipo-baja-escritorio.png">
+<img src="img-readme/prototipo-baja-escritorio.png">
 
 ## Problemas encontrados
 
