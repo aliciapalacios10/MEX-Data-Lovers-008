@@ -18,7 +18,9 @@ const printData = (data)=>{
     </div>`;   
 });
     card.innerHTML = str;
-    window.dataManager.computeStats(data);
+    const totalKmOfEgg = window.dataManager.computeStats(data);
+      curiousFactContainer.innerHTML = 
+      '<br><p><strong>Dato Curioso</p></strong><br><p>Total de Km por recorrer:</p>' + totalKmOfEgg;
 };
 
 //FUNCION PARA FILTRAR POR TIPO

@@ -48,11 +48,6 @@ window.dataManager = {
           totalKmOfEgg +=  kmEgg;
         }  
       });
-      const averageOfEgg = totalKmOfEgg / data.length;
-      curiousFactContainer.innerHTML = 
-      '<br><p><strong>Dato Curioso</p></strong><br><p>Total de Km por recorrer:</p>' + totalKmOfEgg;
-      return averageOfEgg;   
+      return totalKmOfEgg;   
     } 
-  };
-    // console.log(window.dataManager.computeStats(data));
-    
+  };     
