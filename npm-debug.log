@@ -22,7 +22,7 @@
 12 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
 13 verbose pkgid data-lovers@1.0.0
 14 verbose cwd /home/aliciapalaciosalvarado/Documentos/Laboratoria/MEX-Data-Lovers-008
-15 error Linux 4.15.0-54-generic
+15 error Linux 4.15.0-58-generic
 16 error argv "/usr/bin/node" "/usr/bin/npm" "run" "test"
 17 error node v8.10.0
 18 error npm  v3.5.2

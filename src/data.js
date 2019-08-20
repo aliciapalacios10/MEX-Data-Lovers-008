@@ -1,42 +1,58 @@
 // Funcion global
 window.dataManager = {
   // Funcion pura para filtrar tipo
-   filterByType: (data,typeValue) => { //Creando el objeto para filtrar
+   filterByType : (data, typeValue) => { //Creando el objeto para filtrar
      let filterType = data.filter(element =>  element.type.find ((type) => type == typeValue));
-     // let filterType = data.filter((element, index, data) => element.type[0] && element.type[1] == typeValue)
-     //console.log (filterType);
      return filterType;
    },
 
    //Función pura para filtrar por Debilidades
-   filterByWeaknes: (data,weaknessValue)=>{
+   filterByWeaknes : (data, weaknessValue)=>{
      let filterWeaknesses = data.filter (element => element.weaknesses.find((weaknesses)=>weaknesses==weaknessValue));    
      return filterWeaknesses;  
     },
   
      //Funcion pura para filtrar probabilidad de mayor a menor.
-     filterByProbabilities: (data,filterProbability)=>{
+     filterByProbabilities : (data, probabilityOfFinding, filterProbability) => {
        // console.log(filterProbability)
        let result = data.sort((a,b) => {
          if(filterProbability== 'mayor-probability'){
-         if(a.spawn_chance < b.spawn_chance){
+         if(a[probabilityOfFinding] < b[probabilityOfFinding]){
            return 1;
          }
-         if(a.spawn_chance > b.spawn_chance){
+         if(a[probabilityOfFinding] > b[probabilityOfFinding]){
+           return -1;
+         }
+           return 0;
+       }
+       else if (filterProbability== 'menor-probability'){
+         if(a[probabilityOfFinding] > b[probabilityOfFinding]){
+           return 1;
+         }
+         if(a[probabilityOfFinding] < b[probabilityOfFinding]){
            return -1;
          }
          return 0;
-       }
-       else if (filterProbability== 'menor-probability'){
-         if(a.spawn_chance > b.spawn_chance){
-           return 1;
-         }        if(a.spawn_chance < b.spawn_chance){
-           return -1;
-         }
-          return 0;
-       }      return result;
-       // console.log(a.spawn_chance, b.spawn_chance);      
-      });      
-       // let filterMayorProbability = data.sort(a,b )
-     return result;    
-    }};
+       }      
+      });
+      return result;    
+     },
+
+      computeStats : (data) =>{
+        let totalKmOfEgg = 0; //Contador que guarda lo km 
+        data.forEach(element => { //Ejecuta la funcion una vez por cada elemento
+        // totalKmOfEgg += parseFloat(element.egg)
+        const km = element.egg.substr(0,2); 
+        if(km !== 'No' && km !== 'Om'){
+          const kmEgg = parseInt(km);
+          totalKmOfEgg +=  kmEgg;
+        }  
+      });
+      const averageOfEgg = totalKmOfEgg / data.length;
+      curiousFactContainer.innerHTML = 
+      '<br><p><strong>Dato Curioso</p></strong><br><p>Total de Km por recorrer:</p>' + totalKmOfEgg;
+      return averageOfEgg;   
+    } 
+  };
+    // console.log(window.dataManager.computeStats(data));
+    
