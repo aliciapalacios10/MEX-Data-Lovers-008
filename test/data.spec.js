@@ -1,6 +1,5 @@
 require('../src/data.js');
 
-
 describe('example', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
@@ -18,6 +17,7 @@ describe('dataManager',()=>{
   it('Deberia ser un objeto',()=>{
     expect(typeof window.dataManager).toBe('object');
   });
+  
     //TEST PARA LA FUNCIÓN 'FILTRAR POR TIPO'
   describe('filterByType',()=>{ // describe contiene funciones para ser testeadas.
     it('is a function',()=>{//it contiene enunciado en caso de que el test sea correcto o incorrecto
