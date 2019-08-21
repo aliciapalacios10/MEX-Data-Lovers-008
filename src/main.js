@@ -60,12 +60,11 @@ const weaknessesValue = ev.target.value;
        filterWeaknesSelect= printData(filterWeaknesSelect);
    }
    else{
-   filterWeaknessesSelect = window.dataManager.filterByWeaknes(data,weaknessesValue);
+    filterWeaknesSelect = window.dataManager.filterByWeaknes(data,weaknessesValue);
    //console.log(weaknessesValue);
-       printData(filterWeaknessesSelect);
+       printData(filterWeaknesSelect);
     }
 };
 selectWeaknesses.addEventListener("change",filterWeaknesses);
 
 printData(data);//pinta toda la data.
-console.log(window.dataManager.computeStats(data));

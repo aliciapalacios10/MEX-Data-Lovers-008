@@ -1,14 +1,15 @@
-require('../src/data.js');
+// require('../src/data.js');
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
+// describe('example', () => {
+//   it('is a function', () => {
+//     expect(typeof example).toBe('function');
+//   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+//   it('returns `example`', () => {
+//     expect(example()).toBe('example');
+//   });
+// });
+
 require('../src/data.js');
 require('../src/data/pokemon/pokemon.js');//la Data
 
@@ -17,7 +18,7 @@ describe('dataManager',()=>{
   it('Deberia ser un objeto',()=>{
     expect(typeof window.dataManager).toBe('object');
   });
-  
+
     //TEST PARA LA FUNCIÓN 'FILTRAR POR TIPO'
   describe('filterByType',()=>{ // describe contiene funciones para ser testeadas.
     it('is a function',()=>{//it contiene enunciado en caso de que el test sea correcto o incorrecto
