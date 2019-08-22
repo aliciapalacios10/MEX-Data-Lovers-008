@@ -1,10 +1,13 @@
+#47c2c9  azul claro
+#5fbf84 verde
+
 *{
   padding: 0%;
   margin: 0%;
 }
 body{
  /*background-color: #3a6088;*/
- background-color: #f89746;
+ background-color: white;
 }
 h1{
   color: white;
@@ -56,13 +59,8 @@ select{
   background-color: #fad272;
   display: inline-block;
   margin: 2%;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-  -webkit-box-shadow: -3px 6px 20px -1px rgba(74,74,74,1);
-  -moz-box-shadow: -3px 6px 20px -1px rgba(74,74,74,1);
-  box-shadow: -3px 6px 20px -1px rgba(74,74,74,1);
+  border-radius: 3%;
+ 
 }
 .card:hover {
   transform: scale(1.1);
