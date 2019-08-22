@@ -6,89 +6,14 @@
   margin: 0%;
 }
 body{
- /*background-color: #3a6088;*/
  background-color: white;
 }
 h1{
   color: white;
   font-family: 'Bungee', cursive;
 }
-.logo{
-  background-color: #2a7b9b;
-  height: 12vh;
-}
-/*DISEÑO DE MENU*/
-select{
-  background-color: #2a7b9b;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-  color: white;
-  margin-top: 1%;
-  margin-left: 1%;
-}
-.main-container{
-  height: 85vh;
-  display: flex;
-  text-align: center;
-}
-/*DISEÑO DE SCROLL*/
-.background-card{
-  overflow-y: scroll;
-}
-.background-card::-webkit-scrollbar {
-  background-color: #fad272;
-  border-radius: 1rem;
-}
-.background-card::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 1rem;
-  height: 5rem;
-}
-.background-card::-webkit-scrollbar-thumb:hover {
- background-color: #2a7b9b;
-  border-radius: 1rem;
-  height: 5rem;
-}
 
-/*DISEÑO DE TARJETA POKEMON*/
-.pokemon-card{
-  margin: 2%;
-}
-.card{
-/*background-color: #98b1c4;*/
-  background-color: #fad272;
-  display: inline-block;
-  margin: 2%;
-  border-radius: 3%;
- 
-}
-.card:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-}
-.card p{
-  color: #2a7b9b;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1em;
-}
-.curious-fact{
-  background-color: #fad272;
-  height: 35vh;
-  margin: 2%;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1em;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-  -webkit-box-shadow: -3px 6px 20px -1px rgb(216, 216, 216);
-  -moz-box-shadow: -3px 6px 20px -1px rgba(216, 216,216,1);
-  box-shadow: -3px 6px 20px -1px rgba(74,74,74,1);
-  }
-.curious-fact p{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
-}
+/*DISEÑO DE MENU*/
 /*TAMAÑOS DEL GRID*/
 .col-1{width: 8.333333333333332%;}
 .col-2{width: 16.666666666666664%;}
@@ -112,30 +37,3 @@ select{
  }
 
 /*MEDIDAS CON MEDIA QUERIES*/
-@media (min-width: 800px){
-h1{
-  font-size: 65px;
-}
- select{
-   width: 17%;
-   font-size: 20px;
- }
-}
-@media (min-width: 480px){
-  .logo{
-    /*background-color: rgb(25, 61, 95);*/
-    height: 9vh;
-  }
-  h1{
-    font-size: 50px;
-  }
-  select{
-    width: 18%;
-    height: 5vh;
-    font-size: 15px;
-  }
-  .menu-container{
-    height: 5vh;
-    margin-left: 5%;
-  }
-}
