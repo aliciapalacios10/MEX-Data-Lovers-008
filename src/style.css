@@ -139,27 +139,3 @@ h1{
     margin-left: 5%;
   }
 }
-@media (max-width: 480px){
-.logo{
-  height: 8vh;
-  }
-  h1{
-    font-size: 30px;
-    text-align: center;
-  }
-  select{
-    width: 33%;
-    margin-left: -2%;
-    font-size: 15px;
-  }
-  .curious-fact{
-    display: none;
-  }
-  .background-card{
-    width: 100%;
-  }
-  .card{
-    width: 44%;
-    font-size: 15px;
-  }
-}
