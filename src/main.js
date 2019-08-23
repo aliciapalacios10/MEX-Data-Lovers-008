@@ -21,7 +21,7 @@ const printData = (data) => {
   // LLAMANDO A LA FUNCION DE ESTADISTICA KM POR RECORRER
   const totalKmOfEgg = window.dataManager.computeStats(data);
   curiousFactContainer.innerHTML =
-    '<br><p><strong>Dato Curioso</p></strong><br><p>Total de Km por recorrer:</p>' + totalKmOfEgg;
+  `<br><p><strong>Dato Curioso</p></strong><br><p>Total de Km <br> por recorrer: <br><br>${totalKmOfEgg}</p>`
 };
 
 //LLAMADA A LA FUNCION FILTRAR POR TIPO

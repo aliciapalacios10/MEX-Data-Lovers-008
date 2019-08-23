@@ -1,6 +1,3 @@
-#47c2c9  azul claro
-#5fbf84 verde
-
 *{
   padding: 0%;
   margin: 0%;
@@ -25,18 +22,23 @@ select{
   color: white;
   margin-top: 1%;
   margin-left: 1%;
+  width: 30%;
+  height: 5vh;
+  font-size: 20px;
+  text-align: center;
 }
 .main-container{
   height: 85vh;
   display: flex;
   text-align: center;
+  margin-top: 2%;
 }
 /*DISEÑO DE SCROLL*/
 .background-card{
   overflow-y: scroll;
 }
 .background-card::-webkit-scrollbar {
-  background-color: #fad272;
+  background-color: #2a7b9b;
   border-radius: 1rem;
 }
 .background-card::-webkit-scrollbar-thumb {
@@ -45,7 +47,7 @@ select{
   height: 5rem;
 }
 .background-card::-webkit-scrollbar-thumb:hover {
- background-color: #2a7b9b;
+ background-color: white;
   border-radius: 1rem;
   height: 5rem;
 }
@@ -56,7 +58,7 @@ select{
 }
 .card{
 /*background-color: #98b1c4;*/
-  background-color: #fad272;
+  background-color: #2a7b9b;
   display: inline-block;
   margin: 2%;
   border-radius: 3%;
@@ -67,12 +69,12 @@ select{
   transition: transform 0.2s;
 }
 .card p{
-  color: #2a7b9b;
+  color: white;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .curious-fact{
-  background-color: #fad272;
+  background-color: #2a7b9b;
   height: 35vh;
   margin: 2%;
   font-family: 'Josefin Sans', sans-serif;
@@ -88,6 +90,7 @@ select{
 .curious-fact p{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
+  color: white;
 }
 /*TAMAÑOS DEL GRID*/
 .col-1{width: 8.333333333333332%;}
@@ -117,8 +120,13 @@ h1{
   font-size: 65px;
 }
  select{
-   width: 17%;
-   font-size: 20px;
+  width: 30%;
+  height: 5vh;
+  font-size: 20px;
+  text-align: center;
+ }
+ .curious-fact p{
+   font-size: 1.5rem;
  }
 }
 @media (min-width: 480px){
@@ -144,14 +152,14 @@ h1{
   height: 8vh;
   }
   h1{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
-  select{
+  /* select{
     width: 33%;
     margin-left: -2%;
-    font-size: 15px;
-  }
+    font-size: 16px;
+  } */
   .curious-fact{
     display: none;
   }
@@ -160,6 +168,6 @@ h1{
   }
   .card{
     width: 44%;
-    font-size: 15px;
+    font-size: 8px;
   }
 }
