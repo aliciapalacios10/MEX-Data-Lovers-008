@@ -88,3 +88,4 @@ Desde tu navegador da click en el siguiente link: https://aliciapalacios10.githu
 
 Lo primero que debes hacer es forkear este repositorio y clonarlo en tu computadora, contar con un editor de texto, Para correr los test tendrás que descargar Node.js https://nodejs.org/es/, una vez descargado en la terminal ejecuta el comando npm install, para instalar las dependencias del proyecto. Una vez instalado podrás ejecutar el comando npm run test, para correr los test.
 
+## Link presentación data lovers, 4ta edición https://www.canva.com/design/DADjZ5vDk3k/jyOpVZpUs11UbJTSmuakUQ/view?utm_content=DADjZ5vDk3k&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1
