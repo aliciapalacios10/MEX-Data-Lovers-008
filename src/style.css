@@ -12,7 +12,7 @@ h1{
 }
 .logo{
   background-color: #2a7b9b;
-  height: 12vh;
+  height: 15vh;
 }
 /*DISEÑO DE MENU*/
 select{
@@ -44,7 +44,7 @@ select{
 .background-card::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 1rem;
-  height: 5rem;
+  height: 3rem;
 }
 .background-card::-webkit-scrollbar-thumb:hover {
  background-color: white;
@@ -75,17 +75,11 @@ select{
 }
 .curious-fact{
   background-color: #2a7b9b;
-  height: 35vh;
+  height: 30vh;
   margin: 2%;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1em;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-  -webkit-box-shadow: -3px 6px 20px -1px rgb(216, 216, 216);
-  -moz-box-shadow: -3px 6px 20px -1px rgba(216, 216,216,1);
-  box-shadow: -3px 6px 20px -1px rgba(74,74,74,1);
+  border-radius: 3%;
   }
 .curious-fact p{
   font-family: 'Josefin Sans', sans-serif;
