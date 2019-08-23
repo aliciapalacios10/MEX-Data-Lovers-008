@@ -1,5 +1,5 @@
-#47c2c9  azul claro
-#5fbf84 verde
+/* #47c2c9  azul claro
+#5fbf84 verde */
 
 *{
   padding: 0%;
@@ -12,8 +12,21 @@ h1{
   color: white;
   font-family: 'Bungee', cursive;
 }
+.header{
+  background-color: #5fbf84;
+}
+.pokemon-card{
+  
+}
 
-/*DISEÑO DE MENU*/
+.card{
+  display: flex;
+  border: 3px solid #5fbf84;
+  border-radius: 3%;
+  }
+
+/*MEDIDAS CON MEDIA QUERIES*/
+
 /*TAMAÑOS DEL GRID*/
 .col-1{width: 8.333333333333332%;}
 .col-2{width: 16.666666666666664%;}
@@ -36,4 +49,11 @@ h1{
   clear:both;
  }
 
-/*MEDIDAS CON MEDIA QUERIES*/
+
+
+ @media screen and (max-width: 480px){
+   .cards-area{
+     width: 100%;
+     background: red
+   }
+ }
